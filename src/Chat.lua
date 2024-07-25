@@ -2,7 +2,7 @@ local json = require("json")
 local sqlite3 = require('lsqlite3')
 
 ChatDb = ChatDb or sqlite3.open_memory()
-ChatDbAdmin = ChatDbAdmin or require('DbAdmin').new(ChatDb)
+ChatDbAdmin = ChatDbAdmin or require('@reality/DbAdmin').new(ChatDb)
 
 --#region Initialization
 
